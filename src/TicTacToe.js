@@ -69,6 +69,11 @@ function TicTacToe() {
     setWinner(null);
   }
 
+  const resetPoints = ()=>{
+    setPointsO(0);
+    setPointsX(0);
+    setDraws(0);
+  }
   return (
       <main>
         <h1 className="title">Tic Tac Toe</h1>
@@ -104,6 +109,7 @@ function TicTacToe() {
               </h2>
             }
             <button onClick={resetGame}>Recomeçar jogo</button>
+            <button onClick={resetPoints}>Zerar Placar</button>
           </footer>
         }
       </main>
